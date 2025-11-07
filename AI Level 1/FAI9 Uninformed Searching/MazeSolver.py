@@ -142,6 +142,8 @@ class Graph:
     for i in path:
       node2 = self.graph[i]
       total +=
+      
+#hi
 # construct graph of the maze
 # names are "nodexy" where x is the row of the cell, y is the column of the cell
 node00 = Node("(0,0)")
