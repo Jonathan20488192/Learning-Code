@@ -8,5 +8,6 @@ int main() {
     std::cout << "Enter a number:" << std::endl;
     std::string number;
     std::cin >> number;
-    std::string sentence = "My name is   and I've konwn Sarah and Steven for   years ";
+    std::string sentence = "My name is " + name + " and I've known Sarah and Steven for " + number + " years.";
+    std::cout << sentence << std::endl;
 }
