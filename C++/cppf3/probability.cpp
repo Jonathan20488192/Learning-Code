@@ -1,12 +1,16 @@
 #include <iostream>
 #include <string>
 
+
 std::string coin();
 int dice();
 std::string card();
 
 int main() {
     srand(time(0));
+    std::cout << coin() << std::endl;
+    std::cout << dice() << std::endl;
+    std::cout << card() << std::endl;
 }
 
 std::string coin() {
@@ -38,5 +42,14 @@ std::string card() {
     }
     if (number == 13) {
         number1 = "King";
+    } else if (number == 12) {
+        number1 = "Queen";
+    } else if (number == 11) {
+        number1 = "Jack";
+    } else if (number == 1) {
+        number1 = "Ace";
+    } else {
+        number1 = std::to_string(number);
     }
+    return number1 + " of " + suit1;
 }
