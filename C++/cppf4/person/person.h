@@ -7,7 +7,9 @@ class Person{
         std::string name;
         int age;
         int height;
+        std::string heightConversion();
     public:
+        Person();
         Person(std::string n, int a, int h);
         std::string toString();
         std::string getName();
